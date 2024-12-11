@@ -1,0 +1,9 @@
+<div *ngIf="user" class="user-details">
+    <img [src]="user.avatar" alt="User Avatar" class="user-avatar">
+    <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+    <p>Email: {{ user.email }}</p>
+  </div>
+  
+  <div *ngIf="!user" class="error-message">
+    <p>No user details available. Redirecting to user list...</p>
+  </div>

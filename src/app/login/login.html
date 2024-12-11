@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        Kayıt Ol
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <form (submit)="registerUser($event)">
+      <ion-item>
+        <ion-input label="Ad" labelPlacement="floating" placeholder="Adınızı giriniz" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Soyad" labelPlacement="floating" placeholder="Soyadınızı giriniz" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="E-Posta"
+          labelPlacement="floating"
+          type="email"
+          placeholder="E-Posta adresinizi giriniz"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Şifre"
+          labelPlacement="floating"
+          type="password"
+          placeholder="Şifre giriniz"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Şifre Onayla"
+          labelPlacement="floating"
+          type="password"
+          placeholder="Şifrenizi tekrar giriniz"
+          required
+        ></ion-input>
+      </ion-item>
+  
+      <div class="wrapper">
+        <button type="submit" class="ion-activatable ripple-parent primary-button">
+          Kayıt Ol
+          <ion-ripple-effect></ion-ripple-effect>
+        </button>
+      </div>
+    </form>
+  </ion-content>
+  

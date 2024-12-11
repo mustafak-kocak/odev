@@ -1,0 +1,26 @@
+.wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .primary-button {
+    display: inline-block; /* Butonun görünür olmasını sağlar */
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745; /* Yeşil arka plan */
+    border: none;
+    border-radius: 12px; /* Yuvarlatılmış köşeler */
+    line-height: 50px; /* Yazıyı dikey olarak ortalar */
+    text-align: center; /* Yazıyı yatay olarak ortalar */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-button:hover {
+    background-color: #218838; /* Hover durumunda koyu yeşil */
+  }
+  
